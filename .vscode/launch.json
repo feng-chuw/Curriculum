@@ -1,0 +1,40 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Python Debugger: Python File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+
+
+        },
+        {
+            "name": "Debug Backtest Test",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/test/test_backtest_simple.py",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Python Debugger: OKX Data Fetch",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/okx_data_fetch.py",
+            "args": [
+                "--ticker",
+                "BTC-USDT-SWAP",
+                "--start",
+                "2023-01-01",
+                "--end",
+                "2023-01-02",
+                "--freq",
+                "1m"
+            ]
+        }
+    ]
+}

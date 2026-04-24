@@ -1,0 +1,16 @@
+# data
+data/
+
+# python cache
+__pycache__/
+*.pyc
+
+# sphinx build
+my-docs/build/
+
+# notebook checkpoints
+.ipynb_checkpoints/
+
+# environment
+.env
+.venv
